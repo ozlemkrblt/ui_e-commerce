@@ -48,7 +48,7 @@ class _SignUpFormState extends State<SignUpForm> {
           FormError(errors: errors),
           SizedBox(height: getProportionateScreenHeight(40)),
           DefaultButton(
-            text: "Continue",
+            text: "Profil Bilgilerini Gir",
             press: () {
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
@@ -119,7 +119,7 @@ class _SignUpFormState extends State<SignUpForm> {
       },
       decoration: InputDecoration(
         labelText: "Şifre",
-        hintText: "Şifreyi Tekrar Giriniz.",
+        hintText: "Şifreyi Giriniz.",
         // If  you are using latest version of flutter then lable text and hint text shown like this
         // if you r using flutter less then 1.20.* then maybe this is not working properly
         floatingLabelBehavior: FloatingLabelBehavior.always,
