@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/models/Pazar.dart';
 
 import '../../../size_config.dart';
-import '../../pazar/pazar_screen.dart';
+import '../../pazar1/pazar_screen.dart';
 
 class DiscountBanner extends StatelessWidget {
   const DiscountBanner({
@@ -39,7 +40,7 @@ class DiscountBanner extends StatelessWidget {
         ),
       ),
       onTap: () {
-        Navigator.pushNamed(context, PazarScreen.routeName);
+        Navigator.pushNamed(context, Pazar1Screen.routeName);
       },
     );
   }
