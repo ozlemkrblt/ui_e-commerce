@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/components/Stand_card.dart';
 import 'package:shop_app/components/product_card.dart';
 import 'package:shop_app/models/Product.dart';
-import 'package:shop_app/models/Stand.dart';
-import 'package:shop_app/screens/home/components/section_title.dart';
+
+import 'package:shop_app/components/section_title.dart';
 
 import 'package:shop_app/uiprinciples/size_config.dart';
 
@@ -30,7 +29,7 @@ class ProductBanner extends StatelessWidget {
             children: <Widget>[
               SizedBox(
                 height: getProportionateScreenWidth(
-                    250), // <-- you should put some value here
+                    420), // <-- you should put some value here
                 child: ListView.builder(
                   scrollDirection: Axis.vertical,
                   itemCount: demoProducts.length,
@@ -39,22 +38,6 @@ class ProductBanner extends StatelessWidget {
                   },
                 ),
               ),
-
-              /*children: [
-              
-              ...List.generate(
-                
-                demoStand.length,
-                (index) {
-                  if (demoStand[index].isPopular) {
-                    return StandCard(Stand: demoStand[index]);
-                  }
-
-                  return const SizedBox
-                      .shrink(); // here by default width and height is 0
-                },
-              ),
-              SizedBox(width: getProportionateScreenWidth(20)),*/
             ],
           ),
         ),

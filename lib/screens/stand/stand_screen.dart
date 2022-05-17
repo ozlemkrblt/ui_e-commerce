@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/components/custom_bottom_nav_bar.dart';
 import 'package:shop_app/models/Stand.dart';
 import 'package:shop_app/screens/stand/components/body.dart';
 import 'package:shop_app/components/custom_app_bar.dart';
+import 'package:shop_app/uiprinciples/enums.dart';
 
 class StandScreen extends StatelessWidget {
   static String routeName = "/stand";
@@ -12,11 +14,8 @@ class StandScreen extends StatelessWidget {
         ModalRoute.of(context)!.settings.arguments as StandArguments;
     return Scaffold(
       backgroundColor: Color(0xFFF5F6F9),
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(AppBar().preferredSize.height),
-        child: CustomAppBar(id: agrs.stand.id),
-      ),
       body: Body(stand: agrs.stand),
+      bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.home),
     );
   }
 }

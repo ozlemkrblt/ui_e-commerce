@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/components/pazar_card.dart';
 import 'package:shop_app/models/Pazar.dart';
-import 'package:shop_app/screens/home/components/section_title.dart';
+import 'package:shop_app/components/section_title.dart';
 
 import 'package:shop_app/uiprinciples/size_config.dart';
 
@@ -28,7 +28,7 @@ class PazarBanner extends StatelessWidget {
             children: <Widget>[
               SizedBox(
                 height: getProportionateScreenWidth(
-                    250), // <-- you should put some value here
+                    420), // <-- you should put some value here
                 child: ListView.builder(
                   scrollDirection: Axis.vertical,
                   itemCount: demoPazar.length,

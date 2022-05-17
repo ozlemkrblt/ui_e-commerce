@@ -18,7 +18,7 @@ class Body extends StatelessWidget {
           children: [
             SizedBox(height: getProportionateScreenHeight(20)),
             const HomeHeader(),
-            SizedBox(height: getProportionateScreenHeight(80)),
+            SizedBox(height: getProportionateScreenHeight(40)),
             const ProductBanner(),
           ],
         ),
