@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/uiprinciples/enums.dart';
 import 'package:shop_app/models/Pazar.dart';
-import 'package:shop_app/screens/home/components/home_header.dart';
-import 'package:shop_app/screens/pazar/components/categories.dart';
+import 'package:shop_app/components/home_header.dart';
 import 'package:shop_app/screens/pazar/components/stand_banner.dart';
-import 'package:shop_app/size_config.dart';
+import 'package:shop_app/uiprinciples/size_config.dart';
 
 class Body extends StatelessWidget {
   final Pazar pazar;
@@ -17,7 +17,9 @@ class Body extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: getProportionateScreenHeight(20)),
-            HomeHeader(),
+            HomeHeader(
+              selectedMenu: MenuState.home,
+            ),
             StandBanner(),
           ],
         ),

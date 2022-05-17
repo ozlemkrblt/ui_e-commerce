@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/components/no_account_text.dart';
-import '../../../size_config.dart';
+import 'package:shop_app/uiprinciples/size_config.dart';
 import 'sign_form.dart';
 
 class Body extends StatelessWidget {

@@ -3,8 +3,8 @@ import 'package:shop_app/components/custom_surfix_icon.dart';
 import 'package:shop_app/components/default_button.dart';
 import 'package:shop_app/components/form_error.dart';
 import 'package:shop_app/screens/home/home_screen.dart';
-import '../../../constants.dart';
-import '../../../size_config.dart';
+import 'package:shop_app/uiprinciples/constants.dart';
+import 'package:shop_app/uiprinciples/size_config.dart';
 
 class CompleteProfileForm extends StatefulWidget {
   @override

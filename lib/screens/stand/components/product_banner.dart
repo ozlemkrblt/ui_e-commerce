@@ -5,7 +5,7 @@ import 'package:shop_app/models/Product.dart';
 import 'package:shop_app/models/Stand.dart';
 import 'package:shop_app/screens/home/components/section_title.dart';
 
-import '../../../size_config.dart';
+import 'package:shop_app/uiprinciples/size_config.dart';
 
 class ProductBanner extends StatelessWidget {
   const ProductBanner({

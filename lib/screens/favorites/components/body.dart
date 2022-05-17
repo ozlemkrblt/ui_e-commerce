@@ -1,0 +1,17 @@
+import 'package:flutter/material.dart';
+import 'package:shop_app/components/default_button.dart';
+import 'package:shop_app/screens/home/home_screen.dart';
+import 'package:shop_app/uiprinciples/size_config.dart';
+
+//BURAYA İKİYE AYRILAN SAYFAYI KOYACAĞIZ.
+class Body extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        SizedBox(height: SizeConfig.screenHeight * 0.04),
+        Text("BURAYA FAVORI SAYFASI KONULACAK."),
+      ],
+    );
+  }
+}

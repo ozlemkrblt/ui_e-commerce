@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/screens/cart/cart_screen.dart';
 
-import '../../../size_config.dart';
+import 'package:shop_app/uiprinciples/enums.dart';
+import '../screens/profile/profile_screen.dart';
+import 'package:shop_app/uiprinciples/size_config.dart';
 import 'icon_btn_with_counter.dart';
 import 'search_field.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({
     Key? key,
+    required this.selectedMenu,
   }) : super(key: key);
+  final MenuState selectedMenu;
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +28,11 @@ class HomeHeader extends StatelessWidget {
             press: () => Navigator.pushNamed(context, CartScreen.routeName),
           ),
           IconBtnWithCounter(
-            svgSrc: "assets/icons/Bell.svg",
-            numOfitem: 3,
-            press: () {},
+            svgSrc: "assets/icons/User Icon.svg",
+            press: () {
+              MenuState.profile == selectedMenu;
+              Navigator.pushNamed(context, ProfileScreen.routeName);
+            },
           ),
         ],
       ),

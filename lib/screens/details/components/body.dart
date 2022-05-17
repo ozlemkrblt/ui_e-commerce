@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shop_app/components/default_button.dart';
 import 'package:shop_app/models/Cart.dart';
 import 'package:shop_app/models/Product.dart';
-import 'package:shop_app/size_config.dart';
+import 'package:shop_app/uiprinciples/size_config.dart';
 
 import 'color_dots.dart';
 import 'product_description.dart';

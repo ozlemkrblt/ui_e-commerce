@@ -3,8 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shop_app/models/Pazar.dart';
 import 'package:shop_app/models/Product.dart';
 
-import '../../../constants.dart';
-import '../../../size_config.dart';
+import 'package:shop_app/uiprinciples/constants.dart';
+import 'package:shop_app/uiprinciples/size_config.dart';
 
 class PazarDescription extends StatelessWidget {
   const PazarDescription({

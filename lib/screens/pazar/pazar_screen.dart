@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/screens/pazar/components/body.dart';
-import 'package:shop_app/screens/pazar/components/custom_app_bar.dart';
 
 import '../../models/Pazar.dart';
 

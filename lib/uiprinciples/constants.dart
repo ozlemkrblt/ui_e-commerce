@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/size_config.dart';
+import 'package:shop_app/uiprinciples/size_config.dart';
 
 const kPrimaryColor = Color.fromARGB(255, 67, 155, 255);
 const kPrimaryLightColor = Color.fromARGB(255, 223, 255, 250);

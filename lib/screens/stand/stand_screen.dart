@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/models/Stand.dart';
 import 'package:shop_app/screens/stand/components/body.dart';
-import 'package:shop_app/screens/pazar/components/custom_app_bar.dart';
+import 'package:shop_app/components/custom_app_bar.dart';
 
 class StandScreen extends StatelessWidget {
   static String routeName = "/stand";

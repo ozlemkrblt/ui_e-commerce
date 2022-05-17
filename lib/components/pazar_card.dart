@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shop_app/models/Pazar.dart';
-import 'package:shop_app/screens/details/details_screen.dart';
-import 'package:shop_app/screens/home/components/section_title.dart';
 
-import '../constants.dart';
+import 'package:shop_app/uiprinciples/constants.dart';
 import '../screens/pazar/pazar_screen.dart';
-import '../size_config.dart';
+import 'package:shop_app/uiprinciples/size_config.dart';
 
 class PazarCard extends StatelessWidget {
   const PazarCard({
