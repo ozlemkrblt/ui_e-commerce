@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/components/pazar_card.dart';
-import 'package:shop_app/models/Pazar.dart';
+import 'package:shop_app/components/Stand_card.dart';
+import 'package:shop_app/models/Stand.dart';
 import 'package:shop_app/screens/home/components/section_title.dart';
 
 import '../../../size_config.dart';
 
-class PazarBanner extends StatelessWidget {
-  const PazarBanner({
+class StandBanner extends StatelessWidget {
+  const StandBanner({
     Key? key,
   }) : super(key: key);
 
@@ -43,7 +43,7 @@ class PazarBanner extends StatelessWidget {
         //style: TextStyle(color: Colors.white),
             children: [
               TextSpan(
-                text: "Özkanlar Meyve Sebze Pazarı",
+                text: "Özkanlar Meyve Sebze Standı",
                 style: TextStyle(
                   fontSize: getProportionateScreenWidth(24),
                   fontWeight: FontWeight.bold,
@@ -54,7 +54,7 @@ class PazarBanner extends StatelessWidget {
         ),*/
       ),
       onTap: () {
-        //Navigator.pushNamed(context, PazarScreen.routeName);
+        //Navigator.pushNamed(context, StandScreen.routeName);
         
       },
     );*/
@@ -64,7 +64,7 @@ class PazarBanner extends StatelessWidget {
         Padding(
           padding:
               EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(15)),
-          child: SectionTitle(title: "Pazarlar", press: () {}),
+          child: SectionTitle(title: "Standlar", press: () {}),
         ),
         SizedBox(height: getProportionateScreenWidth(20)),
         SingleChildScrollView(
@@ -78,9 +78,9 @@ class PazarBanner extends StatelessWidget {
                     250), // <-- you should put some value here
                 child: ListView.builder(
                   scrollDirection: Axis.vertical,
-                  itemCount: demoPazar.length,
+                  itemCount: demoStands.length,
                   itemBuilder: (context, index) {
-                    return PazarCard(pazar: demoPazar[index]);
+                    return StandCard(stand: demoStands[index]);
                   },
                 ),
               ),
@@ -89,10 +89,10 @@ class PazarBanner extends StatelessWidget {
               
               ...List.generate(
                 
-                demoPazar.length,
+                demoStand.length,
                 (index) {
-                  if (demoPazar[index].isPopular) {
-                    return PazarCard(pazar: demoPazar[index]);
+                  if (demoStand[index].isPopular) {
+                    return StandCard(Stand: demoStand[index]);
                   }
 
                   return const SizedBox

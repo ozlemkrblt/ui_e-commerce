@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shop_app/models/Pazar.dart';
+import 'package:shop_app/models/Stand.dart';
 import 'package:shop_app/screens/details/details_screen.dart';
 import 'package:shop_app/screens/home/components/section_title.dart';
 
@@ -8,16 +8,16 @@ import '../constants.dart';
 import '../screens/pazar/pazar_screen.dart';
 import '../size_config.dart';
 
-class PazarCard extends StatelessWidget {
-  const PazarCard({
+class StandCard extends StatelessWidget {
+  const StandCard({
     Key? key,
     this.width = 140,
     this.aspectRetio = 1.02,
-    required this.pazar,
+    required this.stand,
   }) : super(key: key);
 
   final double width, aspectRetio;
-  final Pazar pazar;
+  final Stand stand;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class PazarCard extends StatelessWidget {
           onTap: () => Navigator.pushNamed(
             context,
             StandScreen.routeName,
-            arguments: PazarArguments(pazar: pazar),
+            arguments: StandArguments(stand: stand),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -45,14 +45,14 @@ class PazarCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Hero(
-                    tag: pazar.id.toString(),
-                    child: Image.asset(pazar.images[0]),
+                    tag: stand.id.toString(),
+                    child: Image.asset(stand.images[0]),
                   ),
                 ),
               ),
               const SizedBox(height: 10),
               Text(
-                pazar.title,
+                stand.title,
                 style: TextStyle(color: Colors.black),
                 maxLines: 2,
               ),
@@ -60,7 +60,7 @@ class PazarCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "\$${pazar.id}",
+                    "\$${stand.id}",
                     style: TextStyle(
                       fontSize: getProportionateScreenWidth(18),
                       fontWeight: FontWeight.w600,
@@ -75,14 +75,14 @@ class PazarCard extends StatelessWidget {
                       height: getProportionateScreenWidth(28),
                       width: getProportionateScreenWidth(28),
                       decoration: BoxDecoration(
-                        color: pazar.isFavourite
+                        color: stand.isFavourite
                             ? kPrimaryColor.withOpacity(0.15)
                             : kSecondaryColor.withOpacity(0.1),
                         shape: BoxShape.circle,
                       ),
                       child: SvgPicture.asset(
                         "assets/icons/Heart Icon_2.svg",
-                        color: pazar.isFavourite
+                        color: stand.isFavourite
                             ? Color(0xFFFF4848)
                             : Color(0xFFDBDEE4),
                       ),

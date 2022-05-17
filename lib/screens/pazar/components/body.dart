@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/components/default_button.dart';
 import 'package:shop_app/models/Pazar.dart';
-import 'package:shop_app/models/Product.dart';
+import 'package:shop_app/screens/home/components/home_header.dart';
+import 'package:shop_app/screens/pazar/components/categories.dart';
+import 'package:shop_app/screens/pazar/components/stand_banner.dart';
 import 'package:shop_app/size_config.dart';
-
-import 'color_dots.dart';
-import 'pazar_description.dart';
-import 'top_rounded_container.dart';
-import 'stand_images.dart';
 
 class Body extends StatelessWidget {
   final Pazar pazar;
@@ -16,7 +12,19 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return SafeArea(
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(height: getProportionateScreenHeight(20)),
+            HomeHeader(),
+            SizedBox(height: getProportionateScreenHeight(80)),
+            StandBanner(),
+          ],
+        ),
+      ),
+    );
+    /* return ListView(
       children: [
         StandImages(pazar: pazar),
         TopRoundedContainer(
@@ -54,6 +62,6 @@ class Body extends StatelessWidget {
           ),
         ),
       ],
-    );
+    );*/
   }
 }

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/models/Stand.dart';
 import 'package:shop_app/screens/pazar/components/body.dart';
 import 'package:shop_app/screens/pazar/components/custom_app_bar.dart';
 
 import '../../models/Pazar.dart';
-import '../../models/Product.dart';
 
-class PazarScreen extends StatelessWidget {
+class StandScreen extends StatelessWidget {
   static String routeName = "/pazar";
 
   @override
@@ -27,4 +27,10 @@ class PazarArguments {
   final Pazar pazar;
 
   PazarArguments({required this.pazar});
+}
+
+class StandArguments {
+  final Stand stand;
+
+  StandArguments({required this.stand});
 }
