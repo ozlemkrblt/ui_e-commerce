@@ -13,10 +13,6 @@ class PazarScreen extends StatelessWidget {
         ModalRoute.of(context)!.settings.arguments as PazarArguments;
     return Scaffold(
       backgroundColor: Color(0xFFF5F6F9),
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(AppBar().preferredSize.height),
-        child: CustomAppBar(id: agrs.pazar.id),
-      ),
       body: Body(pazar: agrs.pazar),
     );
   }

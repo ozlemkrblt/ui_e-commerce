@@ -3,6 +3,7 @@ import 'package:shop_app/components/default_button.dart';
 import 'package:shop_app/screens/home/home_screen.dart';
 import 'package:shop_app/size_config.dart';
 
+//BURAYA İKİYE AYRILAN SAYFAYI KOYACAĞIZ.
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -11,22 +12,14 @@ class Body extends StatelessWidget {
         SizedBox(height: SizeConfig.screenHeight * 0.04),
         Image.asset(
           "assets/images/success.png",
-          height: SizeConfig.screenHeight * 0.4, //40%
+          height: SizeConfig.screenHeight * 0.6, //%60
         ),
-        SizedBox(height: SizeConfig.screenHeight * 0.08),
-        Text(
-          "Login Success",
-          style: TextStyle(
-            fontSize: getProportionateScreenWidth(30),
-            fontWeight: FontWeight.bold,
-            color: Colors.black,
-          ),
-        ),
+        SizedBox(height: SizeConfig.screenHeight * 0.04),
         Spacer(),
         SizedBox(
-          width: SizeConfig.screenWidth * 0.6,
+          width: SizeConfig.screenWidth * 0.9,
           child: DefaultButton(
-            text: "Back to home",
+            text: "Online Alışveriş Yapmak İstiyorum",
             press: () {
               Navigator.pushNamed(context, HomeScreen.routeName);
             },

@@ -14,53 +14,6 @@ class ProductBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    /* return InkWell(
-     // child: Container(
-        // height: 90,
-        width: double.infinity,
-        margin: EdgeInsets.all(getProportionateScreenWidth(20)),
-        padding: EdgeInsets.symmetric(
-          horizontal: getProportionateScreenWidth(20),
-          vertical: getProportionateScreenWidth(15),
-        ),
-        decoration: BoxDecoration(
-          color: Color(0xFF4A3298),
-          borderRadius: BorderRadius.circular(20),
-        ),
-        children: [
-              ...List.generate(
-                demoProducts.length,
-                (index) {
-                  if (demoProducts[index].isPopular)
-                    return ProductCard(product: demoProducts[index]);
-
-                  return SizedBox
-                      .shrink(); // here by default width and height is 0
-                },
-              ),
-              SizedBox(width: getProportionateScreenWidth(20)),
-            ],
-        /**child: Text.rich(
-        //TextSpan(
-        //style: TextStyle(color: Colors.white),
-            children: [
-              TextSpan(
-                text: "Özkanlar Meyve Sebze Standı",
-                style: TextStyle(
-                  fontSize: getProportionateScreenWidth(24),
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ],
-          ),
-        ),*/
-      ),
-      onTap: () {
-        //Navigator.pushNamed(context, StandScreen.routeName);
-        
-      },
-    );*/
-
     return Column(
       children: [
         Padding(
