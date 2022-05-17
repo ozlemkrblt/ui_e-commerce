@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/components/Stand_card.dart';
+import 'package:shop_app/components/product_card.dart';
+import 'package:shop_app/models/Product.dart';
 import 'package:shop_app/models/Stand.dart';
 import 'package:shop_app/screens/home/components/section_title.dart';
 
 import '../../../size_config.dart';
 
-class StandBanner extends StatelessWidget {
-  const StandBanner({
+class ProductBanner extends StatelessWidget {
+  const ProductBanner({
     Key? key,
   }) : super(key: key);
 
@@ -64,7 +66,7 @@ class StandBanner extends StatelessWidget {
         Padding(
           padding:
               EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(15)),
-          child: SectionTitle(title: "Standlar", press: () {}),
+          child: SectionTitle(title: "Ürünlerimiz", press: () {}),
         ),
         SizedBox(height: getProportionateScreenWidth(20)),
         SingleChildScrollView(
@@ -78,9 +80,9 @@ class StandBanner extends StatelessWidget {
                     250), // <-- you should put some value here
                 child: ListView.builder(
                   scrollDirection: Axis.vertical,
-                  itemCount: demoStands.length,
+                  itemCount: demoProducts.length,
                   itemBuilder: (context, index) {
-                    return StandCard(stand: demoStands[index]);
+                    return ProductCard(product: demoProducts[index]);
                   },
                 ),
               ),
