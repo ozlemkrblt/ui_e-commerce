@@ -9,6 +9,7 @@ import 'package:shop_app/screens/profile/profile_screen.dart';
 import 'package:shop_app/screens/sign_in/sign_in_screen.dart';
 import 'package:shop_app/screens/splash/splash_screen.dart';
 import 'package:shop_app/screens/pazar/pazar_screen.dart';
+import 'package:shop_app/screens/stand/stand_screen.dart';
 import 'screens/sign_up/sign_up_screen.dart';
 
 // We use name route
@@ -24,5 +25,6 @@ final Map<String, WidgetBuilder> routes = {
   DetailsScreen.routeName: (context) => DetailsScreen(),
   CartScreen.routeName: (context) => CartScreen(),
   ProfileScreen.routeName: (context) => ProfileScreen(),
+  PazarScreen.routeName: (context) => PazarScreen(),
   StandScreen.routeName: (context) => StandScreen(),
 };

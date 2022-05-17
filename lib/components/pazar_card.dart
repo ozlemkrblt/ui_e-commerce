@@ -30,7 +30,7 @@ class PazarCard extends StatelessWidget {
         child: GestureDetector(
           onTap: () => Navigator.pushNamed(
             context,
-            StandScreen.routeName,
+            PazarScreen.routeName,
             arguments: PazarArguments(pazar: pazar),
           ),
           child: Column(
