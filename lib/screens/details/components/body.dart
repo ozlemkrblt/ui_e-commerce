@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/components/default_button.dart';
+import 'package:shop_app/models/Cart.dart';
 import 'package:shop_app/models/Product.dart';
 import 'package:shop_app/size_config.dart';
 
@@ -7,6 +8,8 @@ import 'color_dots.dart';
 import 'product_description.dart';
 import 'top_rounded_container.dart';
 import 'product_images.dart';
+
+int number = 0;
 
 class Body extends StatelessWidget {
   final Product product;
@@ -42,7 +45,19 @@ class Body extends StatelessWidget {
                         ),
                         child: DefaultButton(
                           text: "Add To Cart",
-                          press: () {},
+                          press: () {
+                            number++;
+                            demoCarts.add(Cart(
+                                product: Product(
+                                    id: product.id,
+                                    images: product.images,
+                                    colors: product.colors,
+                                    title: product.title,
+                                    price: product.price,
+                                    description: product.description),
+                                numOfItem: number));
+                            number = 0;
+                          },
                         ),
                       ),
                     ),
