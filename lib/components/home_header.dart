@@ -10,9 +10,7 @@ import 'search_field.dart';
 class HomeHeader extends StatelessWidget {
   const HomeHeader({
     Key? key,
-    required this.selectedMenu,
   }) : super(key: key);
-  final MenuState selectedMenu;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +28,6 @@ class HomeHeader extends StatelessWidget {
           IconBtnWithCounter(
             svgSrc: "assets/icons/User Icon.svg",
             press: () {
-              MenuState.profile == selectedMenu;
               Navigator.pushNamed(context, ProfileScreen.routeName);
             },
           ),

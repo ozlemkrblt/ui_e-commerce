@@ -7,7 +7,7 @@ import 'package:shop_app/screens/login_success/login_success_screen.dart';
 
 import '../../../components/default_button.dart';
 import 'package:shop_app/uiprinciples/constants.dart';
-import 'package:shop_app/uiprinciples./size_config.dart';
+import 'package:shop_app/uiprinciples/size_config.dart';
 
 class SignForm extends StatefulWidget {
   @override
@@ -111,8 +111,6 @@ class _SignFormState extends State<SignForm> {
       decoration: InputDecoration(
         labelText: "Şifre",
         hintText: "Şifrenizi girin",
-        // If  you are using latest version of flutter then lable text and hint text shown like this
-        // if you r using flutter less then 1.20.* then maybe this is not working properly
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
       ),
@@ -144,8 +142,6 @@ class _SignFormState extends State<SignForm> {
       decoration: InputDecoration(
         labelText: "Email",
         hintText: "Email giriniz.",
-        // If  you are using latest version of flutter then lable text and hint text shown like this
-        // if you r using flutter less then 1.20.* then maybe this is not working properly
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
       ),

@@ -28,5 +28,5 @@ final Map<String, WidgetBuilder> routes = {
   ProfileScreen.routeName: (context) => ProfileScreen(),
   PazarScreen.routeName: (context) => PazarScreen(),
   StandScreen.routeName: (context) => StandScreen(),
-  FavoriteScreen.routeName: (context) => StandScreen(),
+  FavoriteScreen.routeName: (context) => FavoriteScreen(),
 };

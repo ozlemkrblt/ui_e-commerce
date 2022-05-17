@@ -17,9 +17,7 @@ class Body extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: getProportionateScreenHeight(20)),
-            HomeHeader(
-              selectedMenu: MenuState.home,
-            ),
+            HomeHeader(),
             StandBanner(),
           ],
         ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shop_app/components/default_button.dart';
 import 'package:shop_app/screens/home/home_screen.dart';
 import 'package:shop_app/uiprinciples/size_config.dart';
+import 'package:shop_app/uiprinciples/routes.dart';
 
 //BURAYA İKİYE AYRILAN SAYFAYI KOYACAĞIZ.
 class Body extends StatelessWidget {
